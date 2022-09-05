@@ -1,0 +1,31 @@
+
+.divOrSomething{
+    justify-content: center;
+    padding: 30;
+}
+
+table, th , td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  padding: 16px;
+}
+
+tr:hover{
+    color: #ff0000;
+   
+}
+
+table th:nth-child(n) {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+table tr:nth-child(odd) {
+  background-color: #a1eae3;
+}
+
+

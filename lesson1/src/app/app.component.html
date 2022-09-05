@@ -1,18 +1,34 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <app-navigation-bar></app-navigation-bar>
+<div class="container">
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <h1>Courses</h1>  
+  <table >  
+    <thead>
+      <tr>
+          <th>Name</th>  
+          <th>Code</th>  
+          <th>ECTS</th>
+      </tr> 
+       
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let course of courses">
+          <td>{{course.name}}</td>
+          <td>{{course.code}}</td>
+          <td>{{course.ects}} </td>
+      </tr>
+    </tbody>  
+  </table>  
+</div>  
 
+
+<!--
+  
+<tr *ngFor="let course of courses">
+  <td>{{ course }}</td>  
+  <app-course-list-item [course]="course">
+ 
+  </app-course-list-item>
+</tr>
+
+-->
