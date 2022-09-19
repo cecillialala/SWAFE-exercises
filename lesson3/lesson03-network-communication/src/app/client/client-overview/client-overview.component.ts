@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Client, ClientService } from 'src/app/client.service';
 
 @Component({
   selector: 'app-client-overview',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientOverviewComponent implements OnInit {
 
-  constructor() { }
+
+  clients$!: Observable<Client[]>;
+
+  constructor(private clientService: ClientService) { }
+
+
 
   ngOnInit(): void {
+  
+    this.clients$ =this.clientService.getClients()
+ 
   }
+
+  
 
 }

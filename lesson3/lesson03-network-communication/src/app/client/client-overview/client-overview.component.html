@@ -1,1 +1,6 @@
 <p>client-overview works!</p>
+<ul>  
+    <li *ngFor="let client of clients$ | async">
+      {{ client | json }}
+    </li>
+  </ul>
