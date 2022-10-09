@@ -43,8 +43,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin: auto 25%
 }
 .example-card {
-  width: fit-content;
-  padding: 12px;
+  max-width: 600px;
 }
 
 .example-header-image {
