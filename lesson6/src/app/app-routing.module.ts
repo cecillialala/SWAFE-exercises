@@ -7,6 +7,9 @@ import { AccessLogComponent } from './access-log/access-log.component';
 const routes: Routes = [{
   path: '',
   component: HomeComponent
+},
+{path: 'home',
+component: HomeComponent
 }, {
   path: 'access-log',
   component: AccessLogComponent

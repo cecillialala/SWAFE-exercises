@@ -13,6 +13,8 @@ import { HostsComponent } from './hosts/hosts.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HostCardComponent } from './host-card/host-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     AccessLogComponent,
     NavigationComponent,
     HomeComponent,
-    HostsComponent
+    HostsComponent,
+    HostCardComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +34,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    HostCardComponent
+  ]
 })
 export class AppModule { }
